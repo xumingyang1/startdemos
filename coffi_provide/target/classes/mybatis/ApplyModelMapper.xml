@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zs.mapper.ApplyModelMapper" >
+  <resultMap id="BaseResultMap" type="com.xmy.model.ApplyModel" >
+    <id column="applyId" property="applyid" jdbcType="INTEGER" />
+    <result column="applyName" property="applyname" jdbcType="VARCHAR" />
+    <result column="applyTel" property="applytel" jdbcType="VARCHAR" />
+    <result column="applyProfession" property="applyprofession" jdbcType="VARCHAR" />
+    <result column="applyNum" property="applynum" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    applyId, applyName, applyTel, applyProfession, applyNum
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from h_apply
+    where applyId = #{applyid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from h_apply
+    where applyId = #{applyid,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="toApply">
+    insert into h_apply (applyName, applyTel,
+      applyProfession, applyNum)
+    values (#{applyname,jdbcType=VARCHAR}, #{applytel,jdbcType=VARCHAR},
+      #{applyprofession,jdbcType=VARCHAR}, #{applynum,jdbcType=VARCHAR})
+  </insert>
+
+
+  <insert id="insert" parameterType="com.xmy.model.ApplyModel" >
+    insert into h_apply (applyId, applyName, applyTel,
+      applyProfession, applyNum)
+    values (#{applyid,jdbcType=INTEGER}, #{applyname,jdbcType=VARCHAR}, #{applytel,jdbcType=VARCHAR}, 
+      #{applyprofession,jdbcType=VARCHAR}, #{applynum,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.xmy.model.ApplyModel" >
+    insert into h_apply
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="applyid != null" >
+        applyId,
+      </if>
+      <if test="applyname != null" >
+        applyName,
+      </if>
+      <if test="applytel != null" >
+        applyTel,
+      </if>
+      <if test="applyprofession != null" >
+        applyProfession,
+      </if>
+      <if test="applynum != null" >
+        applyNum,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="applyid != null" >
+        #{applyid,jdbcType=INTEGER},
+      </if>
+      <if test="applyname != null" >
+        #{applyname,jdbcType=VARCHAR},
+      </if>
+      <if test="applytel != null" >
+        #{applytel,jdbcType=VARCHAR},
+      </if>
+      <if test="applyprofession != null" >
+        #{applyprofession,jdbcType=VARCHAR},
+      </if>
+      <if test="applynum != null" >
+        #{applynum,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.xmy.model.ApplyModel" >
+    update h_apply
+    <set >
+      <if test="applyname != null" >
+        applyName = #{applyname,jdbcType=VARCHAR},
+      </if>
+      <if test="applytel != null" >
+        applyTel = #{applytel,jdbcType=VARCHAR},
+      </if>
+      <if test="applyprofession != null" >
+        applyProfession = #{applyprofession,jdbcType=VARCHAR},
+      </if>
+      <if test="applynum != null" >
+        applyNum = #{applynum,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where applyId = #{applyid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.xmy.model.ApplyModel" >
+    update h_apply
+    set applyName = #{applyname,jdbcType=VARCHAR},
+      applyTel = #{applytel,jdbcType=VARCHAR},
+      applyProfession = #{applyprofession,jdbcType=VARCHAR},
+      applyNum = #{applynum,jdbcType=VARCHAR}
+    where applyId = #{applyid,jdbcType=INTEGER}
+  </update>
+</mapper>

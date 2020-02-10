@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>咖啡馆创办经营全程深入辅导</title>
+        <link rel="stylesheet" type="text/css" href="static/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="static/css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="static/css/kafeiAllstyle.css">
+        <link rel="stylesheet" type="text/css" href="static/css/fullcalendar.css">
+        <style type="text/css">
+            .header_anniuList span{color:#2a0f00;}
+            .hidden_{visibility: hidden;}
+        </style>
+    </head>
+    <body>
+        <header>    
+    <div class="width1200 clearfloat fontWeight">
+        <div class="fl logo_div"></div>
+        <div class="fl header_anniuList">
+            <a href="index.html"><span class="pl20 pr20 pt10 pb10   ">首页</span></a>
+            <!--
+            <a href="/index.php?s=/Index/Cert/index.html"><span class="pl20 pr20 pt10 pb10    ">证书</span></a>
+            <a href="/index.php?s=/Index/User/zhitiaoList.html"><span class="pl20 pr20 pt10 pb10"  >小纸条</span></a>
+            -->
+            <a href="index-indexcourseindexcategory_i.html"><span class="pl20 pr20 pt10 pb10">咖啡课</span></a>
+            <a href="index-indexcourseindexcategory_i1.html"><span class="pl20 pr20 pt10 pb10">西点课</span></a>
+            <a href="index-indexcourseindexcategory_i2.html"><span class="pl20 pr20 pt10 pb10">套餐课</span></a>
+            <a href="index-indexuserindex.html.html"><span class="pl20 pr20 pt10 pb10">我的</span></a>
+        </div>
+        <div class="fr clearfloat inp_div_header">
+            
+            <div class="fl clearfloat border box-z inp_div_header_con">
+                <form class="form01" action="/index.php?s=/Index/Index/sousuo.html" id="form" method="post">
+                <ul class="fl pl20 inp_div_header_ul">
+                    <li class="after">
+                        <span class="mr5">搜课程</span><i class="arrow_icon arrow_bottom"></i>
+                        <ul class="inp_div_header_ul_inner border-l border-r hide">
+                            <li data-id="1" class="border-b pl20 pr20 box-z">搜课程</li>
+                            <li data-id="2" class="border-b pl20 pr20 box-z">搜文章</li>
+                            <li data-id="3" class="border-b pl20 pr20 box-z">搜师资</li>
+                        </ul>
+                    </li>
+                </ul>
+                <input type="hidden" name="type" value="1" id="type">
+                <input class="inp_div_header_inp fl pr20 box-z" class="fl" type="text" name="name" id="" value="" placeholder="请输入搜索内容">
+                </form>
+            </div>
+            
+            <div onclick="sousuo()" class="fl btn_search_div"></div>
+        </div>
+    </div>
+</header>
+<script type="text/javascript" src="static/js/jquery-1.12.2.js"></script>
+<script type="text/javascript">
+    function sousuo(){
+        $("#form").submit();
+    }
+
+    $(function(){
+        $(".inp_div_header_ul_inner li").click(function(){
+            var type = $(this).attr('data-id');
+			$("#type").val(type);
+        })    
+    });
+
+
+    
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2d0263101035c5141370786b6796fc3b";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script type="text/javascript" charset="utf-8" src="static/js/10067395.js"></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+        <div class="outer_fuildDiv">
+            <div class="width1200">
+                <div class="courseDetails_top pt20 pb20 clearfloat">
+                    <div class="fl courseDetails_top_lunbo">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                                                        <div class="swiper-slide"><img src="static/picture/57a2f553515ce.jpg" width="100%" height="100%"></div>
+                                    
+                                <!-- <div class="swiper-slide">
+                                    <img src="__MOBILE__/img/06.jpg"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__MOBILE__/img/06.jpg"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__MOBILE__/img/06.jpg"/>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="__MOBILE__/img/06.jpg"/>
+                                </div> -->
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="back_div fr">
+                        <a href="javascript:history.go(-1);">
+                            <i class="icon_back icon_backH"></i>
+                            <span>返回上一页</span>
+                        </a>
+                    </div>
+                    
+                    <div class="fl courseDetails_top_con">
+                        <p class="fs30 ml40 mt100 pt20 pb20 border-b">
+                            咖啡馆创办经营全程深入辅导                        </p>
+                        <div class="ml40 mt30"><a href="javascript:;" class="bgred pl20 pr20 pt5 pb5">立即预定</a></div>
+                    </div>
+                </div>
+                <ul class="courseDetails_ulList clearfloat">
+                    <li class="click">课表描述</li>
+                    <li>课程内容</li>
+                    <li>开课信息</li>
+                    <li>温馨提示</li>
+                    <li>课程表提示</li>
+                    <li>推荐课程</li>
+                    <li>关于铂澜</li>
+                    <li>课程评价</li>
+                </ul>
+                <div class="courseDetails_ulList_con clearfloat mt20">
+                    <div class="fl courseDetails_ulList_con_left">
+                        <p class="border-b courseDetails_ulList_con_left_pTit fs20">课表描述</p>
+                        <div class="courseDetails_ulList_con_left_table mt10 ">
+                            <span style="font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:14px;">这是一个时尚餐饮纷纷“拼脸”、大秀颜值的时代！</span></span> 
+<div style="text-align:left;">
+	<span style="font-size:12px;"><span style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14px;">这是一个产品为王、 美味至上的餐饮时代！</span></span> 
+</div>
+<span style="font-size:12px;"><span style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14px;">这是一个第三次咖啡浪潮袭来、咖啡馆蓬勃兴起的时代！</span></span><br>
+<span style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14px;"> 这是一个自我主义泛滥、工匠精神回归的时代！</span><br>
+<span style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14px;"> 这也是一个移动电商大发展、传统实体暗淡的时代！</span><br>
+<p style="text-align:center;">
+	<span style="font-size:12px;"><span style="font-size:14px;">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-size:14px;">这是我们所处的时代，我们爱咖啡，我们爱生活，我们要生存，我们谋成长。在这个浮华满天飞、节操遍地踩的时代，一家咖啡馆是否能否承载这许多？既满足我们的虚荣心，也让我们肆意成长？齐鸣老师在专著《爱上咖啡馆》中吟唱：“指尖划过尘世烦乱，内心安宁而又简单。经营一杯醇香咖啡，用爱来把城市温暖。”</span></span> 
+</p>
+<p style="text-align:center;">
+	<span style="font-size:18px;"> </span> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<span style="font-family:宋体;font-size:14px;">在这个浮华满天飞、节操遍地踩的时代，一家咖啡馆是否能否承载这许多？既满足我们的虚荣心（满足内心情怀），也让我们肆意成长（兼顾成长与收益）？想要实现这些谈何容易，作为一套扎实构建的商业体系，需要兼顾方方面面东西。铂澜咖啡学院的这场课程便是为您理顺咖啡创业道路上的头绪，指出需要顾及的关键成功因素，以及最高效率的操作方法。</span> <img src="static/picture/20160923080326_95344.jpg" alt=""> 
+</p>
+<p class="MsoNormal">
+	<b><span style="font-family:宋体;font-size:14px;">开店课学员们是这么说：</span><span></span></b> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<span style="font-family:宋体;font-size:14px;">学员</span><span style="font-size:14px;">A</span><span style="font-family:宋体;font-size:14px;">说：我只能用一个词来形容本次课程的收获，那就是：醍醐灌顶。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<span style="font-family:宋体;font-size:14px;">学员</span><span style="font-size:14px;">B</span><span style="font-family:宋体;font-size:14px;">说：这显然不是一场轻松的务虚会，累就一个字。三天时间都是在填鸭，不停灌输，几乎每一分钟都在讲述别人拿金钱和时间换来的宝贵经验，那</span><span style="font-size:14px;">TMD</span><span style="font-family:宋体;font-size:14px;">过瘾了。三天下来，我感觉自己已经干了这行三年。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<span style="font-family:宋体;font-size:14px;">学员</span><span style="font-size:14px;">C</span><span style="font-family:宋体;font-size:14px;">说：虽然五次课意犹未尽，但已经需要我足足消耗一个月的时间了，真的非常有收获。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<span style="font-family:宋体;font-size:14px;">学员</span><span style="font-size:14px;">D</span><span style="font-family:宋体;font-size:14px;">：围绕课堂上归纳出的十大关键词，我从来没有这么信心满满，感觉浑身都是力量。不过，我还是准备再花三个月的时间进行当地咖啡馆考察。</span> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<span style="font-family:宋体;font-size:14px;">……</span> 
+</p>
+<br>
+<p>
+	<br>
+</p>
+<p style="text-align:center;">
+	<span style="font-size:18px;"><img src="static/picture/20160818031605_62905.jpg" alt=""><br>
+</span> 
+</p>
+<p style="text-align:left;">
+	<span style="font-size:18px;"><img src="static/picture/20160818031605_62905.jpg" alt=""><img src="static/picture/20160818031605_62905.jpg" alt=""></span><strong><br>
+</strong> 
+</p>
+<p style="text-align:left;">
+	<strong> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">铂澜咖啡学院的咖啡馆创业课程具备如下六大特色：</span><span></span> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">第一，立足于中小资本咖啡馆创业，主要讲述零起点咖啡馆创业的全程注意事项以及操作策略。细到</span><span>2016</span><span style="font-family:宋体;">年以来，咖啡馆工商注册以及餐饮相关证照办理等也都会涉及。要知道国家商事登记制度改革一直在持续推进，证照办理的诸多细节每年都有所不同。</span> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">第二，主要针对北上广深等一线城市实际情况，但通过大量实操案例也会兼顾考虑二三四线城市咖啡馆开店，指出彼此间的异同。</span> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">第三，将大量一手案例分析与实际项目的针对性咨询服务融入到培训教学中，课堂上可以与学员就实际项目做深度探讨，如融资分析、财务分析、选址分析、人员用工分析等，还可以针对学员需求给予一些资源整合方面的增值服务。</span> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">第四，除独立咖啡馆创业辅导外，课堂上还将系统介绍品牌连锁打造的重点，探讨互联网移动电商时代咖啡馆的最佳商业路径，介绍资本眼中的优秀咖啡馆项目具备哪些特点……尽可能满足机构委派学员的学习需求。</span> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">第五，介绍大量模型与实战工具，不仅对于学员前期选址等环节大有裨益，还将有助于创业者构建标准化运营体系，迅速做大做强。</span> </strong> 
+</p>
+<p class="MsoNormal" style="text-indent:21.0pt;">
+	<strong><span style="font-family:宋体;">第六点，精品咖啡、品牌构建、定位规划、选址模型、盈亏平衡点、投资回报率、开源节流、主题规划、设计风格、网络营销是贯穿始终的十大关键词。</span> </strong> 
+</p>
+<strong><img src="static/picture/20160923075744_86525.jpg" alt=""><img src="static/picture/20160923075744_13947.jpg" alt=""><img src="static/picture/20160923075744_18544.jpg" alt=""><img src="static/picture/20160923075745_93868.jpg" alt=""><br>
+</strong> 
+<p>
+	<br>
+</p>
+<p style="text-align:left;">
+	<strong>导师介绍</strong><span style="color:#3E3E3E;font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:16px;line-height:1.5;background-color:#FFFFFF;">：</span><span style="font-size:18px;"> </span> 
+</p>
+<p style="color:#3E3E3E;font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:16px;background-color:#FFFFFF;">
+	<span style="font-family:宋体;">齐鸣</span> 
+</p>
+<p style="color:#3E3E3E;font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:16px;background-color:#FFFFFF;">
+	<span style="font-family:宋体;"><span style="line-height:25.6px;">·十年咖啡行业资深创业者，深耕咖啡行业多年并持续盈利</span></span> 
+</p>
+<p style="color:#3E3E3E;font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:16px;background-color:#FFFFFF;">
+	<span style="font-family:宋体;"><span style="line-height:25.6px;">·铂澜咖啡学院创始人，多所知名大学创业导师</span></span> 
+</p>
+<p style="color:#3E3E3E;font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:16px;background-color:#FFFFFF;">
+	<span style="font-family:宋体;"><span style="line-height:25.6px;">·中共党员、管理学硕士</span></span> 
+</p>
+<p style="color:#3E3E3E;font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;font-size:16px;background-color:#FFFFFF;">
+	<span style="font-family:宋体;">·国家人社部咖啡师职业考评员<br>
+·CQI&nbsp;Q-grader国际咖啡品质鉴定师<br>
+·SCAA（美国精品咖啡协会）认证讲师、金杯大师<br>
+·SCAE（欧洲精品咖啡协会）&nbsp;Roasting&nbsp;Professional（高级烘焙师）、烘焙考官<br>
+·作家，著有《爱上咖啡馆》、《爱上咖啡师》、《咖啡&nbsp;咖啡》、《魔豆宝典-&nbsp;咖啡馆创业全揭秘》、《魔豆宝典-咖啡馆出品设计的智慧》等作品</span> 
+</p>
+<br>
+<p>
+	<br>
+</p>
+<p style="text-align:center;">
+	<br>
+</p>
+<p style="text-align:center;">
+	<br>
+</p>                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hide">
+                            <ul class="courseDetails_ulList_con_right_ul">
+                                <li class="dy_dd1 hidden"><a href="javascript:;">1、M351 案例讲述与互动探讨：咖啡馆行业现状、竞争态势、发展趋势与关键成功要素</a></li><li class="dy_dd1 hidden"><a href="javascript:;">2、M352 案例讲述与互动探讨：咖啡馆定位规划与选址评估分析（含常见几大类型类型）</a></li><li class="dy_dd1 hidden"><a href="javascript:;">3、M353 案例讲述与互动探讨：咖啡馆店面设计、装修验收与吧台（操作间）科学规划</a></li><li class="dy_dd1 hidden"><a href="javascript:;">4、M354 案例讲述与互动探讨：基于定位规划的咖啡馆设备、器具、原材料采购及投资预算分析</a></li><li class="dy_dd1 hidden"><a href="javascript:;">5、M355 咖啡馆神秘顾客式探访与情景学习讨论（上）</a></li><!-- 
+
+                                <li class="dy_dd1 hidden"><a href="">6、这可能是你看到过最全面的烘焙简史</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hide">
+                            <p class="pt10 pb10">课程时间：2016年10月20日起
+                                                            </p>
+                            <p class="pt10 pb10">培训费用：5000.00元/人（官网上所有课程注明报价均默认不含税，需要发票请沟通咨询。 ）</p>
+                            <p class="pt10 pb10">上课人数: 15</p>
+                            <p class="pt10 pb10">人数下限: 2</p>
+                            <p class="pt10 pb10">培训对象: 咖啡师、咖啡馆创业、求职准备</p>
+                            <p class="pt10 pb10">学分: 25分</p>
+                            <p class="pt10 pb10">培训时长: 共计5次课</p>
+                            <p class="pt10 pb10">报名电话: 010-59005818</p>
+                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hide">
+     <span style="line-height:29px;">通过如下4种渠道支付培训课程定金或全款后，我们在3个工作日内向您回复确认。第一，欢迎来铂澜咖啡学院现场咨询并付费；第二，通过<a href="javascript:;"><span style="color:#333333;font-style: italic;">铂澜咖啡学院官网</span></a>在线付款；第三，<a href="javascript:;"><span style="color:#333333;font-style: italic;">铂澜咖啡学院淘宝店</span></a>有培训课程定金链接；第三，通过铂澜咖啡学院微信公众号点击进入有赞商城在线购买课程；</span>
+                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hidden_">
+                            <div class="kechengbiao_div" style="height: auto;">
+                                <div id='calendar'>
+
+                                </div>
+                                <input type="hidden" id="event" value="/index.php?s=/Index/Course/mykc_json/id/86.html">
+                                
+
+                            </div>
+                            <p class="fb">
+                                <span>发布时间：2016-12-08 13:18:40</span>
+                                <span>发布作者：谢洋</span>
+                            </p>
+                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hide">
+                            <ul class="courseDetails_ulList_con_right_ul">
+                                                                <li class="disc_li dy_dd1 hidden"><a href="index-indexcoursedetailcourse_id41.html">FERRANDI法国甜品认证大师班</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hide">
+                            <ul class="courseDetails_ulList_con_right_ul">
+                                
+                                <li class="disc_li dy_dd1 hidden"><a href="javascript:;" style="color:#ff0000">新人须知（Q&A汇总贴）</a></li>
+                                <li class="disc_li dy_dd1 hidden"><a href="history.html">铂澜十年一路走来（2007年至今）</a></li>
+                                <li class="disc_li dy_dd1 hidden"><a href="today.html">今日的铂澜咖啡学院</a></li>
+                                <li class="disc_li dy_dd1 hidden"><a href="contact.html">欢迎联系并找到铂澜</a></li>
+                                <li class="disc_li dy_dd1 hidden"><a href="index1.html">了解铂澜作品及教学培训场景</a></li>
+                            </ul>
+                        </div>
+                        <div class="courseDetails_ulList_con_left_table mt10 hide">
+                                                    </div>
+                    </div>
+                    <div class="fr courseDetails_ulList_con_right">
+                        <ul class="courseDetails_ulList_con_right_ul">
+                            <li class="courseDetails_ulList_con_right_ul_tit border-b fs20">
+                                <span>铂澜相关资讯</span>
+                            </li>
+                            
+                            <li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentdetailid388.h.html">铂澜咖啡学院：开家咖啡馆需要哪些本钱？</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentdetailid389.h.html">咖啡，好一种醇香曼妙的生活方式</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentdetailid390.h.html">咖啡馆里的锐眼商战游戏随想</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentdetailid391.h.html">在咖啡馆里喝酒</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentdetailid392.h.html">读“价值观塑造了星巴克的今天”有感</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentdetailid393.h.html">由百瑞斯塔咖啡师大赛到铂澜咖啡学院</a></li>                            <!-- 
+                            <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史</a></li> -->
+                        </ul>
+                        <ul class="courseDetails_ulList_con_right_ul">
+                            <li class="courseDetails_ulList_con_right_ul_tit border-b fs20">
+                                <span>深入了解铂澜</span>
+                            </li>
+                            <li class="disc_li dy_dd1 hidden"><a href="qa.html">新学员须知汇总贴</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="history.html">铂澜咖啡学院过往发展历程</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="today.html">今日铂澜咖啡学院的详情介绍</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="contact.html">铂澜联系方式、交通及付款信息等</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="javascript:;">铂澜咖啡学院的豪华级培训师团队</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="javascript:;">铂澜咖啡学院创始人、院长齐鸣老师简介</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="training.html">铂澜咖啡学院培训场景浏览</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="index-indexdocumentindexpid381.h.html">查看铂澜咖啡学院的各种最新资讯</a></li>
+                        </ul>
+                        <ul class="courseDetails_ulList_con_right_ul">
+                            <li class="courseDetails_ulList_con_right_ul_tit border-b fs20">
+                                <span>相关课程推荐</span>
+                            </li>
+                             <li class="disc_li dy_dd1 hidden"><a href="">咖啡馆创办经营全程深入辅导</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexcoursedetailcourse_id53.html">咖啡感官评估与系统杯测</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexcoursedetailcourse_id54.html">SCAA咖啡大师一级认证课程 Barista Guild of America Certificat</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexcoursedetailcourse_id55.html">金杯大师认证Golden Cup Technician Certificate</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexcoursedetailcourse_id56.html">铂澜法式西点烘焙入门课程</a></li><li class="disc_li dy_dd1 hidden"><a href="index-indexcoursedetailcourse_id57.html">咖啡职人专修课堂</a></li>                            <!-- <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史这可能是你看到过最全面的烘焙简史</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史</a></li>
+                            <li class="disc_li dy_dd1 hidden"><a href="">这可能是你看到过最全面的烘焙简史</a></li> -->
+                        </ul>
+                        <div class="mb40">
+                            <p class="gzbl_p border-b fs20"><span>关注铂澜</span></p>
+                            <a href="">
+                                <div class="gzbl_imgEweima mt20">
+                                    <img src="static/picture/07.jpg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="width1200 white pt20">
+                <div class="jzxx">
+                    <span class="after">铂澜简介</span>
+                    <span class="after">铂澜简介</span>
+                    <span class="after">铂澜简介</span>
+                    <span class="after">铂澜简介</span>
+                    <span class="after">铂澜简介</span>
+                </div>
+                <p class="jzxx mt20 fs12">北京铂澜丰悦企业管理咨询有限公司 | 京ICP备12029164号-1</p>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="static/js/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="static/js/swiper.min.js"></script>
+    <script src='static/js/fullcalendar.min.js'></script>
+    <script src='static/js/jquery.fancybox-1.3.1.pack.js'></script>
+    <script type="text/javascript">
+        $(".inp_div_header_inp").focus(function(){
+            $(".inp_div_header_con").addClass("shenhongBd").removeClass("border");
+        })
+        $(".inp_div_header_inp").blur(function(){
+            $(".inp_div_header_con").removeClass("shenhongBd").addClass("border");
+        })
+        $(".inp_div_header_ul").hover(function(){
+            $(".inp_div_header_ul_inner").removeClass("hide");
+            $(".arrow_icon").addClass("arrow_top");
+        },function(){
+            $(".inp_div_header_ul_inner").addClass("hide");
+            $(".arrow_icon").removeClass("arrow_top");
+        })
+        $(document).on("click",".inp_div_header_ul_inner li",function(){
+            var html_ = $(this).html();
+            $(".inp_div_header_ul>li span").html(html_);
+        })
+        //轮播
+        var swiper = new Swiper('.courseDetails_top_lunbo .swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false,
+            loop: true
+        });
+        $(".courseDetails_ulList li").click(function(){
+                var index_ = $(this).index();
+                
+                $(".courseDetails_ulList_con_left_table").addClass("hide");
+                if( index_ == 4){
+                    $(".courseDetails_ulList_con_left_table").eq(index_).addClass("hidden_");
+                } 
+
+                $(this).addClass("click").siblings().removeClass("click");
+                var html_ = $(this).html();
+                $(".courseDetails_ulList_con_left_pTit").html(html_);
+                
+                if( index_ == 4){
+                    $(".courseDetails_ulList_con_left_table").eq(index_).removeClass("hidden_");
+                }
+                $(".courseDetails_ulList_con_left_table").eq(index_).removeClass("hide");    
+                
+        })
+        $(".back_div").hover(function(){
+                $(this).find("i").addClass("icon_backR");
+        },function(){
+                $(this).find("i").removeClass("icon_backR");
+        })
+    </script>
+
+    <script type="text/javascript">
+      
+      
+            var url=$('#event').val();
+            ipos = url.indexOf(".html");
+            url=url.substring(0,ipos);
+            $('#calendar').fullCalendar({
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+                events: url,
+                dayClick: function(date, allDay, jsEvent, view) {
+                    var selDate =$.fullCalendar.formatDate(date,'yyyy-MM-dd');
+                    $.fancybox({
+                        'type':'ajax',
+                        //'href':url+'/action/add/date/'+selDate+'.html',
+                    });
+                },
+                eventClick: function(calEvent, jsEvent, view) {
+                    $.fancybox({
+                        'type':'ajax',
+                        //'href':url+'/action/edit/id/'+calEvent.id+'.html',
+                    });
+                }
+            });
+        
+        
+
+       
+    </script>
+</html>
