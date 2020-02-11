@@ -7,15 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="coffi_provide" />
+        <module name="coffi_consumer" />
         <module name="coffi_common" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="coffi_common" options="-parameters" />
+      <module name="coffi_common" options="" />
       <module name="coffi_consumer" options="" />
-      <module name="coffi_provide" options="-parameters" />
+      <module name="coffi_provide" options="" />
     </option>
   </component>
 </project>

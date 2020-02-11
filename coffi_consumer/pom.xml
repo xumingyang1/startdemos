@@ -10,10 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>coffi_consumer</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>test_start</module>
-    </modules>
     <groupId>com.xmy</groupId>
     <version>1.0-SNAPSHOT</version>
 
