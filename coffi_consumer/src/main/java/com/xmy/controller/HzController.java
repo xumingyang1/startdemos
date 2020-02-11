@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("hz")
 @ComponentScan(basePackages = {"com.xmy.*"})
 public class HzController {
-
+//ddd
     @Reference
     private HzService hzService;
 
